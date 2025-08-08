@@ -4,8 +4,7 @@
 
 Este projeto foi desenvolvido por um grupo de estudantes de engenharia elétrica e ciência da computação da UDESC, com o objetivo de criar um robô seguidor de linha de alta performance utilizando controle PID e componentes de ponta.
 
-![Foto do Robô](media/photo_robocore2025.jpg)
-> *[INSIRA UMA FOTO ATUALIZADA DO ROBÔ AQUI]*
+![Foto do Robô](media/foto_roboSuperior.jpg)
 
 ## Tabela de Conteúdos
 - [Visão Geral](#visão-geral)
@@ -30,7 +29,7 @@ O robô seguidor de linha HERMES foi projetado para detectar e seguir pistas com
 | Componente | Descrição / Modelo |
 | :--- | :--- |
 | **Microcontrolador** | ESP32-WROOM-32 |
-| **Sensores de Linha** | Array de sensores Pololu QTR-8RC |
+| **Sensores de Linha** | Oito sensores QRE da ROBOCORE|
 | **Sensores Laterais** | Dois sensores QRE da ROBOCORE |
 | **Driver de Motor** | Ponte H **TB6612FNG** |
 | **Motores** | Motores Pololu N20 10.000 RPM com caixa de redução 1:10 |
@@ -40,9 +39,13 @@ O robô seguidor de linha HERMES foi projetado para detectar e seguir pistas com
 
 ## Esquema Elétrico e Pinagem
 
-Uma conexão correta é crucial para o funcionamento do robô. Abaixo detalhamos a pinagem utilizada e as principais conexões de alimentação.
+Abaixo detalhamos a pinagem utilizada e as principais conexões de alimentação, o esquema foi feito usando EasyEDA.
+
+![Foto do esquema eletrico principal](media/esquema_eletrico.png)
 
 ### Pinagem do ESP32
+
+![Esquema esp32l](media/esp32_pinout.png)
 
 Esta tabela descreve a conexão de cada periférico aos pinos do ESP32.
 
@@ -67,9 +70,7 @@ Esta tabela descreve a conexão de cada periférico aos pinos do ESP32.
 | **Encoders** | | |
 | `Encoder A` | `GPIO 34, 35` | *[EXEMPLO - Apenas pinos de entrada]* |
 | `Encoder B` | `GPIO 36, 39` | *[EXEMPLO - Apenas pinos de entrada]* |
-| **Comunicação** | | |
-| `Serial TX` | `GPIO 1` | Padrão para debug |
-| `Serial RX` | `GPIO 3` | Padrão para debug |
+
 
 ### Diagrama de Conexões
 
